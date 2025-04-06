@@ -1,38 +1,100 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@600&display=swap');
+
+body { 
+  overflow-x: hidden;
+}
+
+.background-container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFF;
+}
+
+.header-text{
+  position: absolute;
+  left: 20%;
+  font-family: 'Boldonse';
+  font-weight: bold;
+  font-size: 37px;
+  margin-bottom: 20px
+}
+
+.line-chart-container{
+  position: absolute;
+  left: 0%;
+  top: 18%;
+}
+
+.text-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  width: 1000px
+}
+
+.text-box {
+  background-color: #2ECC71;
+  padding: 10px;
+  border: 1px solid #F4D037;
+  border-radius: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-box h2{
+  font-family: "Prata";
+  font-size: 18px;
+  color: #F4D037
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-box h3{
+  font-family: "Prata";
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-doughnut{
+  position: absolute;
+  font-family: "Prata";
+  font-size: 14px;
+  font-weight: "normal";
+  top: 57%;
+  left: 590px;
+  transform: translateY(-50%)
+}
+
+.no-margin{
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.full-width-box{
+  width: 1200px;
+  background-color: #2ECC71;
+  padding: 30px;
+  height: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.right-button{
+  background-color: #F4D037;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  height: 40px;
+  font-size: 19px;
+  font-family: 'Prata';
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-text{
+  font-size: 20px;
+  font-family: "Prata";
+  color: #fff;
 }
