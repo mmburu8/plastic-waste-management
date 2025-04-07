@@ -84,7 +84,7 @@ console.log(doughnutMonth);
 const LineChartComponent = () => {
   return (
     <div className="background-container">
-      <h2 className="header-text">JKUAT PLASTIC WASTE MANAGEMENT</h2>
+      <h2 className="header-text">PLASTIC WASTE MANAGEMENT IN JKUAT</h2>
       <div className="line-chart-container">
         <div className="text-container">
           <div className="text-box">
