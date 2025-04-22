@@ -124,14 +124,14 @@ const LineChartComponent = () => {
       <text x={420} y={108} fontFamily="Prata">is due to the start of rainy season</text>
     </LineChart>
     <div style={{display: "flex", alignItems: "center"}}>
-    <PieChart width={750} height={500} margin={{left:20}} fontFamily="Prata">
+    <PieChart width={750} height={500} margin={{left:5}} fontFamily="Prata">
       <Pie data={doughnutMonth} dataKey='value'
       outerRadius={170} innerRadius={110}
       fill={doughnutMonth.fill}
       labelLine={false}
       label={({name, value}) => `${name}: ${value}`}/>
-      <text x={409} y={250} fontFamily="Sen" fontSize={19} textAnchor="middle">Monthly Count of</text>
-      <text x={410} y={270} fontFamily="Sen" fontSize={19} textAnchor="middle">Plastic Waste Collected</text>
+      <text x={309} y={250} fontFamily="Sen" fontSize={19} textAnchor="middle">Monthly Count of</text>
+      <text x={310} y={270} fontFamily="Sen" fontSize={19} textAnchor="middle">Plastic Waste Collected</text>
 {/*{({name, value}) => `${name}: ${value}`}*/}
       <Tooltip/>
     </PieChart>
