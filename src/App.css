@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@600&display=swap');
 
-body { 
-  overflow-x: hidden;
-}
 
 .background-container{
   position: relative;
   width: 100%;
   height: 100vh;
   background-color: #FFF;
+  overflow-x: hidden;
+  margin:0;
+  padding:0;
 }
 
 .header-text{
@@ -19,21 +19,26 @@ body {
   font-family: 'Boldonse';
   font-weight: bold;
   font-size: 37px;
-  margin-bottom: 20px
+  margin-bottom: 10px
 }
 
 .line-chart-container{
-  position: absolute;
+  position: relative;
   left: 0%;
-  top: 18%;
+  top: 14%;
+  width:100%;
+  margin-top: 0px;
 }
 
+
 .text-container{
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 80%;
+  /*max-width: 100%; */
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-left: 100px;
-  width: 1000px
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .text-box {
@@ -63,7 +68,7 @@ body {
   font-size: 14px;
   font-weight: "normal";
   top: 57%;
-  left: 590px;
+  left: 60%;
   transform: translateY(-50%)
 }
 
@@ -73,7 +78,8 @@ body {
 }
 
 .full-width-box{
-  width: 1200px;
+  width: 100%;
+  max-width:100%;
   background-color: #2ECC71;
   padding: 30px;
   height: 30px;
@@ -86,7 +92,7 @@ body {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  height: 40px;
+  height: 25px;
   font-size: 19px;
   font-family: 'Prata';
   border-radius: 5px;

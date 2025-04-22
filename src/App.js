@@ -1,7 +1,9 @@
 import React from 'react';
+import {BrowserRouter, Route, Routes, Link, useNavigate} from "react-router-dom";
 import {BarChart, Bar,LineChart, Line, XAxis, YAxis, 
   CartesianGrid, Tooltip, PieChart, Pie, Sector, Legend} from 'recharts';
 import "./App.css";
+import CarbonEmissions from "./CarbonEmissions";
 
 // main data file
 const data = [
@@ -50,7 +52,7 @@ const percent_bottle = [
   {"items": "Plastic Cups", "percent": 18.92},
   {"items": "Bottle Caps", "percent": 12.32},
   {"items": "Food Wrappers", "percent": 10.30},
-  {"items": "Plastic Dishes", "percent": 2.54},
+  {"items": "Plastic Straws", "percent": 2.54},
 ]
 
 // const for texts
@@ -82,6 +84,13 @@ console.log(doughnutMonth);
 
 
 const LineChartComponent = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    navigate("/carbon-emissions");
+  }
+
   return (
     <div className="background-container">
       <h2 className="header-text">PLASTIC WASTE MANAGEMENT IN JKUAT</h2>
@@ -103,26 +112,26 @@ const LineChartComponent = () => {
             <h3>0.03 kg per person</h3>
           </div>        
           </div>       
-      <LineChart width={900} height={400} data={data}
-    margin={{top: 65, right:30, left:195, bottom:5}}>
+      <LineChart width={1200} height={400} data={data}
+    margin={{top: 65, right:30, left:325, bottom:5}}>
       <CartesianGrid strokeDasharray="3 3" vertical={false}/>
       <XAxis dataKey="weeks"/>
       <YAxis/>
       <Tooltip/>     
       <Line type="monotone" dataKey="amount" stroke="#27AE60" strokeWidth={2} activeDot={{r:12}}/>
-      <text x={535} y={40} fontSize={29} fill="#F1C407" fontFamily="Sen" textAnchor='middle'>WEEKLY PLASTIC WASTE COLLECTED</text>
-      <text x={330} y={90} fontFamily="Prata">The drastic rise in Week 7 and 8</text>
-      <text x={330} y={108} fontFamily="Prata">is due to the start of rainy season</text>
+      <text x={735} y={40} fontSize={29} fill="#F1C407" fontFamily="Sen" textAnchor='middle'>WEEKLY PLASTIC WASTE COLLECTED</text>
+      <text x={530} y={90} fontFamily="Prata">The drastic rise in Week 7 and 8</text>
+      <text x={530} y={108} fontFamily="Prata">is due to the start of rainy season</text>
     </LineChart>
     <div style={{display: "flex", alignItems: "center"}}>
-    <PieChart width={550} height={500} margin={{left:60}} fontFamily="Prata">
+    <PieChart width={750} height={500} margin={{left:160}} fontFamily="Prata">
       <Pie data={doughnutMonth} dataKey='value'
       outerRadius={170} innerRadius={110}
       fill={doughnutMonth.fill}
       labelLine={false}
       label={({name, value}) => `${name}: ${value}`}/>
-      <text x={304} y={250} fontFamily="Sen" fontSize={19} textAnchor="middle">Monthly Count of</text>
-      <text x={307} y={270} fontFamily="Sen" fontSize={19} textAnchor="middle">Plastic Waste Collected</text>
+      <text x={454} y={250} fontFamily="Sen" fontSize={19} textAnchor="middle">Monthly Count of</text>
+      <text x={457} y={270} fontFamily="Sen" fontSize={19} textAnchor="middle">Plastic Waste Collected</text>
 {/*{({name, value}) => `${name}: ${value}`}*/}
       <Tooltip/>
     </PieChart>
@@ -135,26 +144,37 @@ const LineChartComponent = () => {
       <h3 class="no-margin">induce flooding in JKUAT and surrounding areas</h3>
     </div>
     </div>
-    <BarChart width={900} height={350} data={percent_bottle} 
-    layout="horizontal" margin={{left:190, top: 50, bottom: 25}}>
+    <BarChart width={1200} height={350} data={percent_bottle} 
+    layout="horizontal" margin={{left:290, top: 50, bottom: 25}}>
 
       <CartesianGrid strokeDasharray="3 3" vertical={false}/>
       <XAxis dataKey="items"/>
       <YAxis/>
       <Tooltip/>
       <Bar dataKey="percent" fill="#f4d037" />
-      <text x={565} y={19} fontSize={29} fill="#27ae60" fontFamily="Sen" textAnchor='middle'>COUNT OF PLASTIC MATERIALS COLLECTED</text>
-      <text x={600} y={78} fontFamily="Prata">How often do you safely dispose</text>
-      <text x={600} y={102} fontFamily="Prata">plastic materials you use daily?</text>
+      <text x={715} y={19} fontSize={29} fill="#27ae60" fontFamily="Sen" textAnchor='middle'>PERCENTAGE OF PLASTIC MATERIALS COLLECTED</text>
+      <text x={650} y={78} fontFamily="Prata">How often do you safely dispose</text>
+      <text x={650} y={102} fontFamily="Prata">plastic materials you use daily?</text>
     </BarChart>
-    
     <div class="full-width-box">
-      <span class="left-text">Discover how plastic waste is managed and recycled</span>
-      <button class='right-button'>Click to learn more...</button>
+      <span className="left-text">Discover how plastic waste is managed and recycled</span>
+      <a href="/carbon-emissions" className="right-button" onClick={handleClick}>
+      Click to learn more...</a>
     </div>
     </div>
     </div>
   )
 }
 
-export default LineChartComponent;
+function PlasticWaste () {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LineChartComponent/>}/>
+        <Route path="/carbon-emissions" element={<CarbonEmissions/>}/>
+      </Routes>
+    </BrowserRouter>
+  )
+};
+
+export default PlasticWaste;

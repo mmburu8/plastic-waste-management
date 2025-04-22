@@ -1,0 +1,96 @@
+.full-container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFF;
+    overflow-x: hidden;
+  }
+
+  .header-container{
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .header-container h2{
+    font-family: 'Boldonse';
+    font-weight: bold;
+    font-size: 37px;
+    margin-bottom: 0px;
+    
+  }
+
+  .header-container h3{
+    font-family: 'Prata';
+    font-weight: bold;
+    font-size: 27px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+  } 
+
+  .text-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  width: 90%;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.text-box-carbon {
+  background-color: #3498DB;
+  padding: 10px;
+  border: 3px solid #9B49B6;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.text-box-carbon h2{
+  font-family: "Prata";
+  font-size: 17px;
+  color: #FFF
+}
+
+.sankey-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 40px;
+  width: 90%;
+  max-width: 100%;
+}
+
+.sankey-box{
+  width: 52%;
+  height: 400px;
+}
+
+
+.plastic-table-container{
+  width: 44%;
+  height: auto;
+  margin-top: 0;
+}
+
+.sankey-box h2,
+.plastic-table-container h2{
+  font-family: "Prata";
+  font-size:28px;
+  font-weight: bold;
+  text-align: center; 
+  margin-bottom: 10px;
+}
+
+.conclusions-container {
+  position: relative;
+  left: 0%;
+  width: 100%;
+  font-family: "Prata";
+  font-size: 14px;
+  margin-top: 80px;
+  text-align: center;
+}
