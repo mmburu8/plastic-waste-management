@@ -33,7 +33,7 @@ const CarbonEmissions = () => {
             <h2>BEYOND THE BIN</h2>
             <h3>DISPOSAL AND RECYCLING OF PLASTIC WASTE</h3>
         </div>
-        <div className="text-container">
+        <div className="text-container-carbon">
           <div className="text-box-carbon">
             <h2>Only 8%of all plastic waste collected is recycled.</h2>
             <h2>Plastic Waste is disposed through </h2>
