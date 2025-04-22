@@ -31,15 +31,24 @@
 }
 
 
-.text-container{
+{/*.text-container{
   margin-top: 35px;
   margin-left: 40px;
   padding: 0 1rem;
   width: 100%;
-  /*max-width: 100%; */
+  max-width: 100%; 
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+} */}
+.text-container{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  width: 90%;
+  max-width: 100%;
+  margin-top: 30px;
+  margin-bottom:30px;
 }
 
 .text-box {
