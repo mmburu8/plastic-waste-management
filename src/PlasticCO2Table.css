@@ -19,9 +19,9 @@
 .plastic-table th,
 .plastic-table td {
     border: 1px solid #ccc;
-    padding: 16px 15px;
-    height: 30px;
-    font-size: 20px;
+    padding: 12px 11px;
+    height: 20px;
+    font-size: 15px;
 }
 
 .plastic-table thead {
