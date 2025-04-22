@@ -131,7 +131,7 @@ const LineChartComponent = () => {
       labelLine={false}
       label={({name, value}) => `${name}: ${value}`}/>
       <text x={409} y={250} fontFamily="Sen" fontSize={19} textAnchor="middle">Monthly Count of</text>
-      <text x={412} y={270} fontFamily="Sen" fontSize={19} textAnchor="middle">Plastic Waste Collected</text>
+      <text x={410} y={270} fontFamily="Sen" fontSize={19} textAnchor="middle">Plastic Waste Collected</text>
 {/*{({name, value}) => `${name}: ${value}`}*/}
       <Tooltip/>
     </PieChart>
@@ -145,7 +145,7 @@ const LineChartComponent = () => {
     </div>
     </div>
     <BarChart width={990} height={350} data={percent_bottle} 
-    layout="horizontal" margin={{left:110, top: 50, bottom: 25}}>
+    layout="horizontal" margin={{left:140, top: 50, bottom: 25}}>
 
       <CartesianGrid strokeDasharray="3 3" vertical={false}/>
       <XAxis dataKey="items"/>
