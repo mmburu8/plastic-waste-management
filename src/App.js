@@ -112,8 +112,8 @@ const LineChartComponent = () => {
             <h3>0.03 kg per person</h3>
           </div>        
           </div>       
-      <LineChart width={1200} height={400} data={data}
-    margin={{top: 65, right:30, left:325, bottom:5}}>
+      <LineChart width={1000} height={400} data={data}
+    margin={{top: 65, right:30, left:275, bottom:5}}>
       <CartesianGrid strokeDasharray="3 3" vertical={false}/>
       <XAxis dataKey="weeks"/>
       <YAxis/>
