@@ -130,8 +130,8 @@ const LineChartComponent = () => {
       fill={doughnutMonth.fill}
       labelLine={false}
       label={({name, value}) => `${name}: ${value}`}/>
-      <text x={359} y={250} fontFamily="Sen" fontSize={19} textAnchor="middle">Monthly Count of</text>
-      <text x={360} y={270} fontFamily="Sen" fontSize={19} textAnchor="middle">Plastic Waste Collected</text>
+      <text x={369} y={250} fontFamily="Sen" fontSize={19} textAnchor="middle">Monthly Count of</text>
+      <text x={370} y={270} fontFamily="Sen" fontSize={19} textAnchor="middle">Plastic Waste Collected</text>
 {/*{({name, value}) => `${name}: ${value}`}*/}
       <Tooltip/>
     </PieChart>
