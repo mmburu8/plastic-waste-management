@@ -119,9 +119,9 @@ const LineChartComponent = () => {
       <YAxis/>
       <Tooltip/>     
       <Line type="monotone" dataKey="amount" stroke="#27AE60" strokeWidth={2} activeDot={{r:12}}/>
-      <text x={735} y={40} fontSize={29} fill="#F1C407" fontFamily="Sen" textAnchor='middle'>WEEKLY PLASTIC WASTE COLLECTED</text>
-      <text x={530} y={90} fontFamily="Prata">The drastic rise in Week 7 and 8</text>
-      <text x={530} y={108} fontFamily="Prata">is due to the start of rainy season</text>
+      <text x={695} y={40} fontSize={29} fill="#F1C407" fontFamily="Sen" textAnchor='middle'>WEEKLY PLASTIC WASTE COLLECTED</text>
+      <text x={490} y={90} fontFamily="Prata">The drastic rise in Week 7 and 8</text>
+      <text x={490} y={108} fontFamily="Prata">is due to the start of rainy season</text>
     </LineChart>
     <div style={{display: "flex", alignItems: "center"}}>
     <PieChart width={750} height={500} margin={{left:160}} fontFamily="Prata">
