@@ -130,8 +130,8 @@ const LineChartComponent = () => {
       fill={doughnutMonth.fill}
       labelLine={false}
       label={({name, value}) => `${name}: ${value}`}/>
-      <text x={404} y={250} fontFamily="Sen" fontSize={19} textAnchor="middle">Monthly Count of</text>
-      <text x={407} y={270} fontFamily="Sen" fontSize={19} textAnchor="middle">Plastic Waste Collected</text>
+      <text x={414} y={250} fontFamily="Sen" fontSize={19} textAnchor="middle">Monthly Count of</text>
+      <text x={417} y={270} fontFamily="Sen" fontSize={19} textAnchor="middle">Plastic Waste Collected</text>
 {/*{({name, value}) => `${name}: ${value}`}*/}
       <Tooltip/>
     </PieChart>
@@ -144,15 +144,15 @@ const LineChartComponent = () => {
       <h3 class="no-margin">induce flooding in JKUAT and surrounding areas</h3>
     </div>
     </div>
-    <BarChart width={1200} height={350} data={percent_bottle} 
-    layout="horizontal" margin={{left:290, top: 50, bottom: 25}}>
+    <BarChart width={850} height={350} data={percent_bottle} 
+    layout="horizontal" margin={{left:90, top: 50, bottom: 25}}>
 
       <CartesianGrid strokeDasharray="3 3" vertical={false}/>
       <XAxis dataKey="items"/>
       <YAxis/>
       <Tooltip/>
       <Bar dataKey="percent" fill="#f4d037" />
-      <text x={715} y={19} fontSize={29} fill="#27ae60" fontFamily="Sen" textAnchor='middle'>PERCENTAGE OF PLASTIC MATERIALS COLLECTED</text>
+      <text x={565} y={19} fontSize={29} fill="#27ae60" fontFamily="Sen" textAnchor='middle'>PERCENTAGE OF PLASTIC MATERIALS COLLECTED</text>
       <text x={650} y={78} fontFamily="Prata">How often do you safely dispose</text>
       <text x={650} y={102} fontFamily="Prata">plastic materials you use daily?</text>
     </BarChart>
