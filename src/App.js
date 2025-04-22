@@ -124,7 +124,7 @@ const LineChartComponent = () => {
       <text x={420} y={108} fontFamily="Prata">is due to the start of rainy season</text>
     </LineChart>
     <div style={{display: "flex", alignItems: "center"}}>
-    <PieChart width={750} height={500} margin={{left:60}} fontFamily="Prata">
+    <PieChart width={750} height={500} margin={{left:20}} fontFamily="Prata">
       <Pie data={doughnutMonth} dataKey='value'
       outerRadius={170} innerRadius={110}
       fill={doughnutMonth.fill}
