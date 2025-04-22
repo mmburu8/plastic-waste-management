@@ -144,7 +144,7 @@ const LineChartComponent = () => {
       <h3 class="no-margin">induce flooding in JKUAT and surrounding areas</h3>
     </div>
     </div>
-    <BarChart width={850} height={350} data={percent_bottle} 
+    <BarChart width={970} height={350} data={percent_bottle} 
     layout="horizontal" margin={{left:90, top: 50, bottom: 25}}>
 
       <CartesianGrid strokeDasharray="3 3" vertical={false}/>
@@ -153,8 +153,8 @@ const LineChartComponent = () => {
       <Tooltip/>
       <Bar dataKey="percent" fill="#f4d037" />
       <text x={565} y={19} fontSize={29} fill="#27ae60" fontFamily="Sen" textAnchor='middle'>PERCENTAGE OF PLASTIC MATERIALS COLLECTED</text>
-      <text x={650} y={78} fontFamily="Prata">How often do you safely dispose</text>
-      <text x={650} y={102} fontFamily="Prata">plastic materials you use daily?</text>
+      <text x={600} y={78} fontFamily="Prata">How often do you safely dispose</text>
+      <text x={600} y={102} fontFamily="Prata">plastic materials you use daily?</text>
     </BarChart>
     <div class="full-width-box">
       <span className="left-text">Discover how plastic waste is managed and recycled</span>
