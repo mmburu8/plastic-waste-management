@@ -30,12 +30,11 @@
   .text-container-carbon{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  margin-left: 50px;
+  margin-left: 40px;
   width: 100%;
   max-width: 100%;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom:50px;
 }
 
 .text-box-carbon {
