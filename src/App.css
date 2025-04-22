@@ -34,7 +34,7 @@
 .text-container{
   margin: 0 auto;
   padding: 0 1rem;
-  width: 80%;
+  width: 100%;
   /*max-width: 100%; */
   display: flex;
   flex-wrap: wrap;
